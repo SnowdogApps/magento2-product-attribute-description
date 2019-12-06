@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="attribute_edit_tabs">
+            <block class="Snowdog\ProductAttributeDescription\Block\Adminhtml\Catalog\Product\Attribute\Edit\Tab\Description"
+                   name="snowproductattributedescription.attribute.description"
+            >
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Attribute Description</argument>
+                    <argument name="group_code" xsi:type="string">advanced</argument>
+                </arguments>
+            </block>
+            <action method="addTab">
+                <argument name="name" xsi:type="string">snowproductattribute-description-description</argument>
+                <argument name="block" xsi:type="string">snowproductattributedescription.attribute.description</argument>
+            </action>
+        </referenceBlock>
+    </body>
+</page>
