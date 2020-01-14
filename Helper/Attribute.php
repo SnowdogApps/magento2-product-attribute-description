@@ -55,4 +55,15 @@ class Attribute extends AbstractHelper
 
         return $data;
     }
+
+    public function getProductViewAttributesDescriptions(array $data): array
+    {
+        $attributesCodes = [];
+        foreach ($data as $attribute) {
+            $attributesCodes[] = $attribute['code'];
+        }
+
+        return $this->getAttributesDescriptions($attributesCodes);
+
+    }
 }
