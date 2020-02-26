@@ -1,4 +1,5 @@
-<?php declare(strict_types=1);
+<?php
+declare(strict_types=1);
 
 namespace Snowdog\ProductAttributeDescription\Setup;
 
@@ -28,7 +29,7 @@ class InstallSchema implements InstallSchemaInterface
     ): void {
         $connection = $setup->getConnection();
         $connection->addColumn(
-            $connection->getTableName('catalog_eav_attribute'),
+            $setup->getTable('catalog_eav_attribute'),
             ProductAttributeDescriptionManager::ATTRIBUTE_DESCRIPTION_CODE,
             [
                 'type' => Table::TYPE_TEXT,
