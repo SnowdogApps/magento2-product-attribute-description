@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## [Unreleased]
+* Revise composer.json schema
 
 ## [1.1.1] - 2020-05-29
 * Removed not useful header in changelog
