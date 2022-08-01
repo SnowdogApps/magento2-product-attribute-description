@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+## [1.2.0] - 2022-08-01
+* Revise composer.json schema
+
 ## [1.1.1] - 2020-05-29
 * Removed not useful header in changelog
 
